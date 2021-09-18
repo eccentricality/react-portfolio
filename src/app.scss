@@ -7,6 +7,8 @@
         background-color: coral;
         position: relative;
         top: 70px;
+        // prevents instant snapping back to anchors
+        scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         // for firefox
         scrollbar-width: none;
