@@ -1,0 +1,19 @@
+.app {
+  height: 100vh;
+
+  .sections {
+    width: 100%;
+    // accommodates for topbar that will remain stationary throughout
+    height: calc(100vh - 70px);
+    background-color: salmon;
+    position: relative;
+    // start after 70 pixels
+    top: 70px;
+
+    // for each element inside
+    > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+    }
+  }
+}
