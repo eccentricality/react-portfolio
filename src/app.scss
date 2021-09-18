@@ -1,19 +1,23 @@
-.app {
-  height: 100vh;
+.app{
+    height: 100vh;
 
-  .sections {
-    width: 100%;
-    // accommodates for topbar that will remain stationary throughout
-    height: calc(100vh - 70px);
-    background-color: salmon;
-    position: relative;
-    // start after 70 pixels
-    top: 70px;
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: coral;
+        position: relative;
+        top: 70px;
+        scroll-snap-type: y mandatory;
+        // for firefox
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
 
-    // for each element inside
-    > * {
-      width: 100vw;
-      height: calc(100vh - 70px);
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
     }
-  }
 }
