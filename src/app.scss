@@ -10,6 +10,7 @@
         scroll-snap-type: y mandatory;
         // for firefox
         scrollbar-width: none;
+        // for all others
         &::-webkit-scrollbar{
             display: none;
         }
